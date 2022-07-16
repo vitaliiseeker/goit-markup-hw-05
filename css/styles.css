@@ -141,7 +141,6 @@ body {
 .site-nav>.item {
   position: relative;
   display: flex;
-  overflow: hidden;
 }
 
 .site-nav .item+.item {
@@ -178,6 +177,7 @@ body {
   position: absolute;
   bottom: -1px;
   right: 0;
+  /* left: 0; */
   width: 100%;
   height: 4px;
   background-color: var(--accent-color);
@@ -252,7 +252,7 @@ body {
     url('../images/banner.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .banner-title {
@@ -301,6 +301,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
